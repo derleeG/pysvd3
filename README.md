@@ -17,6 +17,6 @@ sh make.sh
 ## execution time
 |        method                |   evaluation        | numpy with openblas | svd3 w/o patching |  svd3 w patching |
 | ---------------------------- | --------------------|--------------------:|------------------:|-----------------:|
-| QR decomposition             | average             | 43.889ms            | 2.948ms           | 2.806ms          |
-| singular value decomposition | average             | 21.976ms            | 4.625ms           | 4.686ms          |
-| polar decomposition          | average             | 79.979ms            | 3.388ms           | 3.432ms          |
+| QR decomposition             | average             | 43.889us            | 2.948us           | 2.806us          |
+| singular value decomposition | average             | 21.976us            | 4.625us           | 4.686us          |
+| polar decomposition          | average             | 79.979us            | 3.388us           | 3.432us          |
