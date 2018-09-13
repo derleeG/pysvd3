@@ -5,7 +5,7 @@ cimport numpy as np
 np.import_array()
 
 
-cdef extern from 'lib/svd3/svd3.h':
+cdef extern from '../lib/svd3/svd3.h':
     void svd(\
             float a11, float a12, float a13, \
             float a21, float a22, float a23, \

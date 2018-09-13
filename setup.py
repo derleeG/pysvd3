@@ -7,7 +7,7 @@ import pkgconfig
 
 extension = [
         Extension('svd3',
-            ['svd3.pyx'],
+            ['src/svd3.pyx'],
             language='c++',
             include_dirs = [numpy.get_include()])]
 
