@@ -104,7 +104,7 @@ def benchmark_speed(func, data=None):
         _ = func(A)
     end = timer()
 
-    print('Average execution time over {} random samples: {} ms'.format(N, (end-start)/N*1e6))
+    print('Average execution time over {} random samples: {} us'.format(N, (end-start)/N*1e6))
 
     return data
 
