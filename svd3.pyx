@@ -47,11 +47,11 @@ def svd3(np.ndarray[float, ndim=2, mode='c'] A not None):
         v31, v32, v33)
 
     U = np.array([[u11, u12, u13], [u21, u22, u23], [u31, u32, u33]])
-    S = np.array([[s11, s12, s13], [s21, s22, s23], [s31, s32, s33]])
-    #S = np.array([s11, s22, s33])
-    V = np.array([[v11, v12, v13], [v21, v22, v23], [v31, v32, v33]])
+    #S = np.array([[s11, s12, s13], [s21, s22, s23], [s31, s32, s33]])
+    S = np.array([s11, s22, s33])
+    Vh = np.array([[v11, v21, v31], [v12, v22, v32], [v13, v23, v33]])
 
-    return U, S, V
+    return U, S, Vh
 
 
 
