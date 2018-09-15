@@ -6,7 +6,8 @@ see https://github.com/ericjang/svd3 for details
 # Installation
 sh make.sh
 
-# Benchmark
+# Benchmark 
+testing method: average over 100000 randomly initialized matrix
 ## reconstruction error
 |        method                |   evaluation        | numpy with openblas | svd3 w/o patching |  svd3 w patching |
 | ---------------------------- | --------------------|--------------------:|------------------:|-----------------:|
