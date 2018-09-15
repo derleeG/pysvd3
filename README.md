@@ -10,13 +10,13 @@ sh make.sh
 ## reconstruction error
 |        method                |   evaluation        | numpy with openblas | svd3 w/o patching |  svd3 w patching |
 | ---------------------------- | --------------------|--------------------:|------------------:|-----------------:|
-| QR decomposition             | \|\|QR - A\|\|\_F   | 7.275e-08           | 5.307e-03         | 1.214e-06        |
-| singular value decomposition | \|\|USV* - A\|\|\_F | 1.046e-07           | 3.563e-02         | 2.145e-06        |
-| polar decomposition          | \|\|UP - A\|\|\_F   | 6.435e-07           | 5.875e-02         | 1.072e-06        |
+| QR decomposition             | \|\|QR - A\|\|\_F /  \|\|A\|\|\_F | 3.716e-08  | 5.608e-03 | 8.253e-07        |
+| singular value decomposition | \|\|USV* - A\|\|\_F /  \|\|A\|\|\_F| 5.891e-08 | 1.750e-02 | 1.259e-06        |
+| polar decomposition          | \|\|UP - A\|\|\_F  /  \|\|A\|\|\_F | 3.948e-07 | 2.609e-02 | 4.506e-07        |
 
 ## execution time
 |        method                |   evaluation        | numpy with openblas | svd3 w/o patching |  svd3 w patching |
 | ---------------------------- | --------------------|--------------------:|------------------:|-----------------:|
-| QR decomposition             | average             | 43.889us            | 2.948us           | 2.806us          |
-| singular value decomposition | average             | 21.976us            | 4.625us           | 4.686us          |
-| polar decomposition          | average             | 79.979us            | 3.388us           | 3.432us          |
+| QR decomposition             | average             | 43.307us            | 2.771us           | 2.780us          |
+| singular value decomposition | average             | 21.133us            | 4.374us           | 4.690us          |
+| polar decomposition          | average             | 78.317us            | 3.201us           | 3.537us          |
