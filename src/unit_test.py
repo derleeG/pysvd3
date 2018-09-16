@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.linalg
 from timeit import default_timer as timer
-import svd3
+import pysvd3 as svd3
 
 N = 100000
 def get_func(method):
