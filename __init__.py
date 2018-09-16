@@ -1,2 +1,2 @@
-from svd3 import *
+from .svd3 import *
 del np
